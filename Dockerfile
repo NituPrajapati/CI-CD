@@ -6,7 +6,7 @@ FROM python:3.13
 WORKDIR /app
 
 # Copy dependency file first (for caching efficiency)
-COPY requirement.txt .
+COPY requirements.txt .
 
 # Install dependencies
 RUN pip install --no-cache-dir -r requirement.txt
