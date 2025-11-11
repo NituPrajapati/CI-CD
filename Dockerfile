@@ -3,7 +3,7 @@
 FROM python:3.13
 
 # Set working directory inside container
-WORKDIR /app
+WORKDIR /CI_CD
 
 # Copy dependency file first (for caching efficiency)
 COPY requirements.txt .
